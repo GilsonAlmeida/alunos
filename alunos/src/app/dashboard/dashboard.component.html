@@ -1,0 +1,10 @@
+<p-accordion>
+    <p-accordionTab header="Cursos" [selected]="true">
+       <p-dataList [value]="listaCurso" >
+          <ng-template let-curso pTemplate="item">
+          {{curso.nome}}
+          </ng-template>
+       </p-dataList>
+    </p-accordionTab>
+  
+</p-accordion>
