@@ -10,7 +10,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AccordionModule,GrowlModule, DataListModule} from 'primeng/primeng';     
 import { ToolbarModule,ButtonModule,SplitButtonModule} from 'primeng/primeng';  
 import { CursoService } from './curso.service';
+import { AlunoService } from './aluno.service';
 import { CursoModule } from './curso/curso.module';
+import { AlunoModule } from './aluno/aluno.module';
 
 
 
@@ -28,7 +30,7 @@ import { CursoModule } from './curso/curso.module';
     BrowserAnimationsModule,
     AccordionModule,GrowlModule,DataListModule,ToolbarModule,ButtonModule,SplitButtonModule
   ],
-  providers: [CursoService],
+  providers: [CursoService,AlunoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -7,29 +7,21 @@ import { ToolbarModule,ButtonModule,SplitButtonModule} from 'primeng/primeng';
 import { DataTableModule,SharedModule} from 'primeng/primeng';
 import { InputTextModule} from 'primeng/primeng';
 import {PanelModule} from 'primeng/primeng';
+import { AlunoRoutingModule } from './aluno-routing.module';
 
-import { CursoRoutingModule } from './curso-routing.module';
-import { CrudComponent } from './crud/crud.component';
-import { ListaComponent } from './lista/lista.component';
-import { DetalhesComponent } from './detalhes/detalhes.component';
-
-
+import { CrudalunoComponent } from './crudaluno/crudaluno.component';
+import { ListaalunoComponent } from './listaaluno/listaaluno.component';
+import { DetalhesalunoComponent } from './detalhesaluno/detalhesaluno.component';
 
 @NgModule({
   imports: [
     CommonModule,FormsModule,PanelModule,
-    CursoRoutingModule,
+    AlunoRoutingModule,
     DataTableModule,
     BrowserAnimationsModule,
     AccordionModule,GrowlModule,DataListModule,ToolbarModule,ButtonModule,SplitButtonModule,
     DataTableModule,SharedModule,InputTextModule
   ],
-  declarations: [CrudComponent, ListaComponent, DetalhesComponent]
+  declarations: [ CrudalunoComponent, ListaalunoComponent, DetalhesalunoComponent]
 })
-export class CursoModule { 
-
- constructor(){
-     
- }
-
-}
+export class AlunoModule { }
