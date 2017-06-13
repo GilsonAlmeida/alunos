@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { SuperCrud } from './../../comum/supercrud.component';
+import {AlunoService} from  './../../aluno.service';
 
 @Component({
-  selector: 'app-crudaluno',
+  selector: 'crudaluno',
   templateUrl: './crudaluno.component.html',
   styleUrls: ['./crudaluno.component.css']
 })
-export class CrudalunoComponent implements OnInit {
+export class CrudalunoComponent  extends SuperCrud implements OnInit {
 
-  constructor() { }
+  constructor(service:AlunoService) {
+    super(service);
+   }
 
-  ngOnInit() {
-  }
 
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AlunoService } from './../../aluno.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { SuperLista } from '../../comum/superlista.component';
-import { AlunoService } from './../../aluno.service';
 
 @Component({
   selector: 'app-lista',

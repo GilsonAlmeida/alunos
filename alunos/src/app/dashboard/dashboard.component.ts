@@ -29,6 +29,7 @@ export class DashboardComponent implements OnInit {
     
     this.alunoService.getAll().then(response=>{
       this.listaAluno=response.values;
+       console.log(">>>>"+ this.listaAluno);
     });
 
   }

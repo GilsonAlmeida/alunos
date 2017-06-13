@@ -28,8 +28,6 @@ import { DetalhesComponent } from './detalhes/detalhes.component';
 })
 export class CursoModule { 
 
- constructor(){
-     
- }
+
 
 }

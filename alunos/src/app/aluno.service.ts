@@ -6,6 +6,7 @@ import { SuperService} from './comum/superservice.service';
 export class AlunoService extends SuperService {
 
   constructor(http:Http) {
+    
     super('aluno',http);
    }
 
