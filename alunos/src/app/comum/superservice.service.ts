@@ -20,7 +20,7 @@ export class SuperService {
   }
 
   getAll():Promise<any> {
-    return this.http.get(`${this.baseUrl}/${this.collection}`)
+      return this.http.get(`${this.baseUrl}/${this.collection}`)
       .toPromise().then(response=>response.json())
       .catch(this.errorHandler);
   }

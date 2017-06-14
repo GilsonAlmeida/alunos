@@ -8,11 +8,11 @@ import { SuperLista } from '../../comum/superlista.component';
   templateUrl: '../../comum/lista.component.html',
   styleUrls:  ['../../comum/lista.component.css']
 })
-export class ListaalunoComponent extends SuperLista implements OnInit {
+export class ListaComponent extends SuperLista implements OnInit {
 
-    constructor(service:AlunoService, router:Router, route: ActivatedRoute) {
-      super(service,router,route);
-      this.cols = [ {field: 'nome', header: 'Nomes'}, {field: 'version', header: 'Versão'} ];
+  constructor(service:AlunoService, router:Router, route: ActivatedRoute) {
+    super(service,router,route);
+    this.cols = [ {field: 'nome', header: 'Nomes'}, {field: 'version', header: 'Versão'} ];
     
 
    }

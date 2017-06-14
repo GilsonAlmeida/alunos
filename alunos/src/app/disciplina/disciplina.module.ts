@@ -8,7 +8,7 @@ import { DataTableModule,SharedModule} from 'primeng/primeng';
 import { InputTextModule} from 'primeng/primeng';
 import {PanelModule} from 'primeng/primeng';
 
-import { AlunoRoutingModule } from './aluno-routing.module';
+import { DisciplinaRoutingModule } from './disciplina-routing.module';
 import { CrudComponent } from './crud/crud.component';
 import { ListaComponent } from './lista/lista.component';
 import { DetalhesComponent } from './detalhes/detalhes.component';
@@ -16,12 +16,11 @@ import { DetalhesComponent } from './detalhes/detalhes.component';
 @NgModule({
   imports: [
     CommonModule,FormsModule,PanelModule,
-    AlunoRoutingModule,
-     DataTableModule,
-    BrowserAnimationsModule,
+    DisciplinaRoutingModule,
+     BrowserAnimationsModule,
     AccordionModule,GrowlModule,DataListModule,ToolbarModule,ButtonModule,SplitButtonModule,
     DataTableModule,SharedModule,InputTextModule
   ],
   declarations: [CrudComponent, ListaComponent, DetalhesComponent]
 })
-export class AlunoModule { }
+export class DisciplinaModule { }

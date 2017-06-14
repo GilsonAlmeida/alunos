@@ -6,7 +6,7 @@ import { CrudComponent } from './crud/crud.component';
 
 const routes: Routes = [
   {
-    path:'aluno',component:CrudComponent,
+    path:'disciplina',component:CrudComponent,
     children:[
       { path: '',component:ListaComponent},
       { path: 'detalhes/:id',component:DetalhesComponent }
@@ -14,8 +14,9 @@ const routes: Routes = [
   }
 ];
 
+
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AlunoRoutingModule { }
+export class DisciplinaRoutingModule { }

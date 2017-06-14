@@ -2,6 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CursoService } from './../curso.service';
 import {AlunoService} from './../aluno.service';
+import {DisciplinaService} from './../disciplina.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -12,11 +13,13 @@ export class DashboardComponent implements OnInit {
 
   listaCurso:any[];
   listaAluno:any[];
+  listaDisciplina:any[];
 
 
   constructor(
     private cursoService:CursoService,
-    private alunoService:AlunoService) { }
+    private alunoService:AlunoService,
+    private disciplinaService:DisciplinaService) { }
 
   ngOnInit() {
     this.atualiza();
@@ -29,9 +32,14 @@ export class DashboardComponent implements OnInit {
     
     this.alunoService.getAll().then(response=>{
       this.listaAluno=response.values;
-       console.log(">>>>"+ this.listaAluno);
+     
     });
 
+    
+    this.disciplinaService.getAll().then(response=>{
+      this.listaDisciplina=response.values;
+     
+    });
   }
 
 

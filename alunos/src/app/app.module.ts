@@ -10,10 +10,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AccordionModule,GrowlModule, DataListModule} from 'primeng/primeng';     
 import { ToolbarModule,ButtonModule,SplitButtonModule} from 'primeng/primeng';  
 import { CursoService } from './curso.service';
+import { DisciplinaService } from './disciplina.service';
 import { AlunoService } from './aluno.service';
 import { CursoModule } from './curso/curso.module';
+import { DisciplinaModule } from './disciplina/disciplina.module';
 import { AlunoModule } from './aluno/aluno.module';
-
 
 
 @NgModule({
@@ -24,13 +25,13 @@ import { AlunoModule } from './aluno/aluno.module';
   imports: [
     BrowserModule,
     FormsModule,
-    CursoModule,
+    CursoModule,DisciplinaModule,AlunoModule,
     HttpModule,    
     AppRoutingModule,
     BrowserAnimationsModule,
     AccordionModule,GrowlModule,DataListModule,ToolbarModule,ButtonModule,SplitButtonModule
   ],
-  providers: [CursoService,AlunoService],
+  providers: [CursoService,AlunoService,DisciplinaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
