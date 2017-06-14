@@ -7,6 +7,7 @@ import { ToolbarModule,ButtonModule,SplitButtonModule} from 'primeng/primeng';
 import { DataTableModule,SharedModule} from 'primeng/primeng';
 import { InputTextModule} from 'primeng/primeng';
 import {PanelModule} from 'primeng/primeng';
+import {AutoCompleteModule} from 'primeng/primeng';
 
 import { AlunoRoutingModule } from './aluno-routing.module';
 import { CrudComponent } from './crud/crud.component';
