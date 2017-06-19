@@ -8,7 +8,7 @@
     <h3>Nome</h3>
     <input id="in1" type="text" size="30" pInputText [(ngModel)]="selecionado.nome">
     <h3>Curso</h3>
-    <p-autoComplete [(ngModel)]="selecionado.curso" [suggestions]="cursos" (completeMethod)="filtrarCategorias($event)"
+    <p-autoComplete [(ngModel)]="selecionado.curso" [suggestions]="cursos" (completeMethod)="filtrarCursos($event)"
         [size]="10" [minLength]="1" [dropdown]="true" (onDropdownClick)="atualizaCurso($event)" field="nome">
     </p-autoComplete>
 </p-panel>

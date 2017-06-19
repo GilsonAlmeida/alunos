@@ -12,6 +12,7 @@ import { DisciplinaRoutingModule } from './disciplina-routing.module';
 import { CrudComponent } from './crud/crud.component';
 import { ListaComponent } from './lista/lista.component';
 import { DetalhesComponent } from './detalhes/detalhes.component';
+import {AutoCompleteModule} from 'primeng/primeng';
 
 @NgModule({
   imports: [
@@ -19,7 +20,7 @@ import { DetalhesComponent } from './detalhes/detalhes.component';
     DisciplinaRoutingModule,
      BrowserAnimationsModule,
     AccordionModule,GrowlModule,DataListModule,ToolbarModule,ButtonModule,SplitButtonModule,
-    DataTableModule,SharedModule,InputTextModule
+    DataTableModule,SharedModule,InputTextModule,AutoCompleteModule
   ],
   declarations: [CrudComponent, ListaComponent, DetalhesComponent]
 })

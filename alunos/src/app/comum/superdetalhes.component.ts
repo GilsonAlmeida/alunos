@@ -32,6 +32,7 @@ export class SuperDetalhes {
   }
 
   salvar() {
+    console.log("SALVAR SERVICE"+ this.selecionado)
     this.service.add(this.selecionado)
       .then((data) => this.router.navigate(['../..'], { relativeTo: this.route }));
 

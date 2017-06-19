@@ -21,7 +21,7 @@ import { DetalhesComponent } from './detalhes/detalhes.component';
      DataTableModule,
     BrowserAnimationsModule,
     AccordionModule,GrowlModule,DataListModule,ToolbarModule,ButtonModule,SplitButtonModule,
-    DataTableModule,SharedModule,InputTextModule
+    DataTableModule,SharedModule,InputTextModule,AutoCompleteModule
   ],
   declarations: [CrudComponent, ListaComponent, DetalhesComponent]
 })

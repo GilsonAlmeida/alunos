@@ -19,17 +19,17 @@ cursos = [];
  
   ngOnInit() {
     super.ngOnInit();
-    this.atualizaCursos();
+    this.atualizaCurso();
 
   }
 
-  atualizaCursos() {
+  atualizaCurso() {
     this.cursoService.getAll().then(response => {
       this.cursos = response.values;
     });
   }
 
-  filtrarCategorias(event) {
+  filtrarCursos(event) {
     let query = event.query;
     this.cursoService.filtra(query).then(response => {
       this.cursos = response.values;

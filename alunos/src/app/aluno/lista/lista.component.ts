@@ -12,7 +12,7 @@ export class ListaComponent extends SuperLista implements OnInit {
 
   constructor(service:AlunoService, router:Router, route: ActivatedRoute) {
     super(service,router,route);
-    this.cols = [ {field: 'nome', header: 'Nomes'}, {field: 'version', header: 'Versão'} ];
+    this.cols = [ {field: 'nome', header: 'Nomes'}, {field: 'curso.nome', header: 'Curso'} ];
     
 
    }
